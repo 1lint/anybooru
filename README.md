@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ### Quick Start with Huggingface diffusers
 ```
-python generate_images.py "lint/danbooru_tags/2021_0_pruned.parquet" --pretrained_path="andite/anything-v4.0" --use_fp16=True --batch_size=1 --output_dir="./anybooru"
+python generate_images.py "lint/danbooru_tags/2021_0_pruned.parquet" --pretrained_path="andite/pastel-mix" --use_fp16=True --batch_size=1 --output_dir="./anybooru"
 ```
 
 ### Quick Start with A1111 SD Webui API
@@ -51,6 +51,7 @@ Advantages of A1111 Webui generation
 ## Prominent Issues
 
 Tags annotating multiple people may fail to generate an image with the correct number of people. YMMV depending on which checkpoint you use.
+Generating high quality hands is a challenge as always; recommend using a negative embedding to mitigate the issue. 
 
 ## Pytorch Dataset
 
