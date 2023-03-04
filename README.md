@@ -11,7 +11,7 @@ This repository includes code/instructions for generating your own variant of th
 
 Generate a synthetic anime image dataset using an anime style Stable Diffusion checkpoint with Danbooru2021 tags collected in https://gwern.net/danbooru2021. By setting strong global positive and negative prompts with additional embeddings, you can generate a homogenous, high quality image dataset annotated with your input prompts. 
 
-![](./anybooru_examples/image_grid.png)
+![](./anybooru_examples/full_image_grid.png)
 
 The Stable Diffusion checkpoint can be in Huggingface diffusers format or in the standard Pytorch-Lightning format hosted on an A1111 webui api. 
 I extracted the tag strings from the Danbooru2021 metadata file and uploaded them at https://huggingface.co/datasets/lint/danbooru_tags for use with the included `generate_images.py` script.
