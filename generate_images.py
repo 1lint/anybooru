@@ -160,5 +160,5 @@ for batch_idx, batch in enumerate(tqdm(dataloader)):
         metadata.add_text("seed", seeds[i])
         for k, v in sampler_settings.items():
             metadata.add_text(k, str(v))
-        image.save(Path(args.output_dir)/f'{ids[i]}_{0}.png', pnginfo=metadata)
+        image.save(Path(args.output_dir)/f'{ids[i]}_{i}.png', pnginfo=metadata)
 
